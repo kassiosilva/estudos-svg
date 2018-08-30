@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Fill e Stroke</title>
+</head>
+<body>
+    <h1>Fill e Stroke</h1>
+
+    <style>
+        .circle {
+            stroke: #000;
+            stroke-width: 5;
+        }
+
+        .circle-1 {
+            stroke-dasharray: 400;
+            stroke-dashoffset: 95;
+            fill: red;
+        }
+
+        .circle-2 {
+            fill: blue;
+            fill-opacity: .8;
+        }
+
+        .circle-3 {
+            fill: green;
+            fill-opacity: .6;
+        }
+    </style>
+
+    <svg width="500" heigh="100" viewBox="0 0 500 150">
+        <circle class="circle circle-1" r="55" cx="200" cy="70"/>
+    </svg>
+</body>
+</html>
