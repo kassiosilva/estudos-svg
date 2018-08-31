@@ -1,4 +1,4 @@
-#Estudos de SVG
+# Estudos de SVG
 
 > Esse repositório servirá para armazenar todos os exercícios e conteúdos aprendidos sobre o SVG.
 
