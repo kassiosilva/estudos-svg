@@ -23,27 +23,6 @@ h2 {
 }
 
 svg {
-    border: 1px solid red;
-}
-
-img,
-svg {
-    display: inline-block;
-}
-
-img {
-    max-width: 400px
-}
-
-svg {
     vertical-align: top;
     margin-top: 26px;
-}
-
-.hidden {
-    display: none;
-}
-
-.star {
-    fill: red;
 }
