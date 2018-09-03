@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Manipulando SVG com JS</title>
+    </head>
+
+    <body>
+        <svg class="desenho" width="500" height="500" viewBox="0 0 500 500">
+
+        </svg>
+
+        <button id="create">Criar círculos!</button>
+
+        <script>
+            var desenho = document.querySelector('.desenho');
+            var svgNS = 'http://www.w3.org/2000/svg'
+
+            function createCircle() {
+                var randomX = Math.floor(Math.random() * 500);
+                var randomY = Math.floor(Math.random() * 500);
+
+                // Criado elemento circle
+                var myCircle = document.createElementNS(svgNS, "circle");
+
+                // Passando seus atributos
+                myCircle.setAttributeNS(null, 'r', 10);
+                myCircle.setAttributeNS(null, 'cx', randomX);
+                myCircle.setAttributeNS(null, 'cy', randomY);
+                myCircle.setAttributeNS(null, 'fill', 'blue');
+
+                // Colocando dentro do svg
+                desenho.appendChild(myCircle);
+            }
+
+            var btn = document.querySelector('#create');
+
+            btn.addEventListener('click', createCircle);
+        </script>
+    </body>
+</html>
